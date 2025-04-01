@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Run Grafana Sync
         uses: srgssr/grafana-sync-action@50aa65d4fbb3ba3b798aad5b6c67b68275441b79
