@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Grafana Sync
-        uses: srgssr/grafana-sync-action@v1.0.0
+        uses: srgssr/grafana-sync-action@50aa65d4fbb3ba3b798aad5b6c67b68275441b79
         with:
           grafana-url: ${{ secrets.GRAFANA_URL }}
           api-key: ${{ secrets.GRAFANA_API_KEY }}
