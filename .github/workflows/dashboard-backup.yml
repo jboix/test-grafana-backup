@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
 
       - name: Run Grafana Sync
-        uses: srgssr/grafana-sync-action@1e4abe3dc726936f71102712f65b2fc58a7fa851
+        uses: srgssr/grafana-sync-action@937d3f4d196a29cfb4d15e81f6271a26716e3232
         with:
           grafana-url: ${{ secrets.GRAFANA_URL }}
           api-key: ${{ secrets.GRAFANA_API_KEY }}
