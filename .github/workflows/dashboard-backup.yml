@@ -20,11 +20,12 @@ jobs:
           fetch-depth: 0
 
       - name: Run Grafana Sync
-        uses: srgssr/grafana-sync-action@75cd699160da349047f02e5a9f3089d4a6a5efc9
+        uses: srgssr/grafana-sync-action@v1.2.0
         with:
           grafana-url: ${{ secrets.GRAFANA_URL }}
           api-key: ${{ secrets.GRAFANA_API_KEY }}
           dir: 'pillarbox-monitoring-grafana/dashboards'
+          clear: true
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
